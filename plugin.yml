@@ -1,0 +1,11 @@
+name: FilipusBackupy
+version: 1.0
+main: pl.filipus.filipusBackupy.FilipusBackupy
+api-version: 1.20
+commands:
+  nadajbackup:
+    description:
+    usage: /nadajbackup <gracz>
+  odbierzbackup:
+    description:
+    usage: /odbierzbackup
