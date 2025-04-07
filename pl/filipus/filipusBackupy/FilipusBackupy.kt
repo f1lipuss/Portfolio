@@ -24,11 +24,9 @@ class FilipusBackupy : JavaPlugin() {
         backupManager = BackupManager(backupStorage)
         backupManager.loadBackupsFromStorage()
 
-        // Rejestracja komend
         getCommand("nadajbackup")?.setExecutor(OpenBackupGuiCommand(backupManager))
         getCommand("odbierzbackup")?.setExecutor(GiveBackupCommand(backupManager))
 
-        // Listener
         server.pluginManager.registerEvents(DeathListener(backupManager), this)
 
 
